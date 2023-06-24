@@ -1,0 +1,29 @@
+version: '3'
+services:
+  devops:
+    image: hemanth9848/devopsreponit:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  aws:
+    image: hemanth9848/awsreponit:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  datascience:
+    image: hemanth9848/datasciencereponit:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  azure:
+    image: hemanth9848/azurereponit:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
